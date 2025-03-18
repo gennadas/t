@@ -1,0 +1,32 @@
+[17:57:37] [ERROR] [Quilt Loader/]: Uncaught exception in thread "main"
+java.lang.RuntimeException: An exception occurred when launching the server!
+	at org.quiltmc.loader.impl.launch.server.QuiltServerLauncher.main(QuiltServerLauncher.java:68)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.quiltmc.loader.impl.launch.server.QuiltServerLauncher.main(QuiltServerLauncher.java:66)
+Caused by: org.quiltmc.loader.impl.util.ExceptionUtil$WrappedException: java.io.IOException: error reading /home/minecraft/t/server/server.jar
+	at org.quiltmc.loader.impl.util.ExceptionUtil.wrap(ExceptionUtil.java:52)
+	at org.quiltmc.loader.impl.game.minecraft.MinecraftGameProvider.locateGame(MinecraftGameProvider.java:299)
+	at org.quiltmc.loader.impl.launch.knot.Knot.createGameProvider(Knot.java:187)
+	at org.quiltmc.loader.impl.launch.knot.Knot.init(Knot.java:132)
+	at org.quiltmc.loader.impl.launch.knot.Knot.launch(Knot.java:78)
+	at net.fabricmc.loader.launch.knot.KnotServer.main(KnotServer.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	... 2 more
+Caused by: java.io.IOException: error reading /home/minecraft/t/server/server.jar
+	at org.quiltmc.loader.impl.game.LibClassifier.process(LibClassifier.java:270)
+	at org.quiltmc.loader.impl.game.LibClassifier.process(LibClassifier.java:223)
+	at org.quiltmc.loader.impl.game.minecraft.MinecraftGameProvider.locateGame(MinecraftGameProvider.java:227)
+	... 7 more
+Caused by: java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1649)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1657)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1495)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1458)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:251)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:180)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:194)
+	at org.quiltmc.loader.impl.game.LibClassifier.process(LibClassifier.java:257)
+	... 9 more

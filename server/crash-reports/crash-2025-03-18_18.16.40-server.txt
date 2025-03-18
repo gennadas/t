@@ -1,0 +1,868 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 2025-03-18 18:16:40
+Description: Watching Server
+
+java.lang.Error: Watchdog
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at net.minecraft.class_1255.method_20813(class_1255.java:159)
+	at net.minecraft.class_1255.method_18857(class_1255.java:149)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at org.popcraft.chunky.platform.FabricServer.getConsole(FabricServer.java:66)
+	at org.popcraft.chunky.GenerationTask.update(GenerationTask.java:110)
+	at org.popcraft.chunky.GenerationTask.lambda$run$1(GenerationTask.java:158)
+	at org.popcraft.chunky.GenerationTask$$Lambda/0x00007ff2691a3d50.accept(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2179)
+	at net.minecraft.class_9761.method_60459(class_9761.java:242)
+	at net.minecraft.class_9761.method_60462(class_9761.java:106)
+	at net.minecraft.class_9761$$Lambda/0x00007ff268ffa2e8.apply(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at net.minecraft.class_1255.method_18859(class_1255.java:164)
+	at net.minecraft.class_3215$class_4212.method_18859(class_3215.java:602)
+	at net.minecraft.class_1255.method_16075(class_1255.java:138)
+	at net.minecraft.class_3215$class_4212.method_16075(class_3215.java:611)
+	at net.minecraft.class_1255.method_18857(class_1255.java:147)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at org.popcraft.chunky.platform.FabricServer.getConsole(FabricServer.java:66)
+	at org.popcraft.chunky.GenerationTask.update(GenerationTask.java:110)
+	at org.popcraft.chunky.GenerationTask.lambda$run$1(GenerationTask.java:158)
+	at org.popcraft.chunky.GenerationTask$$Lambda/0x00007ff2691a3d50.accept(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2179)
+	at net.minecraft.class_9761.method_60459(class_9761.java:242)
+	at net.minecraft.class_9761.method_60462(class_9761.java:106)
+	at net.minecraft.class_9761$$Lambda/0x00007ff268ffa2e8.apply(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at net.minecraft.class_1255.method_18859(class_1255.java:164)
+	at net.minecraft.class_3215$class_4212.method_18859(class_3215.java:602)
+	at net.minecraft.class_1255.method_16075(class_1255.java:138)
+	at net.minecraft.class_3215$class_4212.method_16075(class_3215.java:611)
+	at net.minecraft.class_1255.method_18857(class_1255.java:147)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at org.popcraft.chunky.platform.FabricServer.getConsole(FabricServer.java:66)
+	at org.popcraft.chunky.GenerationTask.update(GenerationTask.java:110)
+	at org.popcraft.chunky.GenerationTask.lambda$run$1(GenerationTask.java:158)
+	at org.popcraft.chunky.GenerationTask$$Lambda/0x00007ff2691a3d50.accept(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2179)
+	at net.minecraft.class_9761.method_60459(class_9761.java:242)
+	at net.minecraft.class_9761.method_60462(class_9761.java:106)
+	at net.minecraft.class_9761$$Lambda/0x00007ff268ffa2e8.apply(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at net.minecraft.class_1255.method_18859(class_1255.java:164)
+	at net.minecraft.class_3215$class_4212.method_18859(class_3215.java:602)
+	at net.minecraft.class_1255.method_16075(class_1255.java:138)
+	at net.minecraft.class_3215$class_4212.method_16075(class_3215.java:611)
+	at net.minecraft.class_1255.method_18857(class_1255.java:147)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at net.minecraft.class_2991.method_12899(class_2991.java:90)
+	at net.minecraft.class_2991.method_29460(class_2991.java:60)
+	at net.minecraft.class_2991.method_18699(class_2991.java:54)
+	at net.minecraft.server.MinecraftServer.method_3813(MinecraftServer.java:1055)
+	at net.minecraft.server.MinecraftServer.method_3748(MinecraftServer.java:953)
+	at net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:713)
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:292)
+	at net.minecraft.server.MinecraftServer$$Lambda/0x00007ff268ed9048.run(Unknown Source)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at net.minecraft.class_1255.method_20813(class_1255.java:159)
+	at net.minecraft.class_1255.method_18857(class_1255.java:149)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at org.popcraft.chunky.platform.FabricServer.getConsole(FabricServer.java:66)
+	at org.popcraft.chunky.GenerationTask.update(GenerationTask.java:110)
+	at org.popcraft.chunky.GenerationTask.lambda$run$1(GenerationTask.java:158)
+	at org.popcraft.chunky.GenerationTask$$Lambda/0x00007ff2691a3d50.accept(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2179)
+	at net.minecraft.class_9761.method_60459(class_9761.java:242)
+	at net.minecraft.class_9761.method_60462(class_9761.java:106)
+	at net.minecraft.class_9761$$Lambda/0x00007ff268ffa2e8.apply(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at net.minecraft.class_1255.method_18859(class_1255.java:164)
+	at net.minecraft.class_3215$class_4212.method_18859(class_3215.java:602)
+	at net.minecraft.class_1255.method_16075(class_1255.java:138)
+	at net.minecraft.class_3215$class_4212.method_16075(class_3215.java:611)
+	at net.minecraft.class_1255.method_18857(class_1255.java:147)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at org.popcraft.chunky.platform.FabricServer.getConsole(FabricServer.java:66)
+	at org.popcraft.chunky.GenerationTask.update(GenerationTask.java:110)
+	at org.popcraft.chunky.GenerationTask.lambda$run$1(GenerationTask.java:158)
+	at org.popcraft.chunky.GenerationTask$$Lambda/0x00007ff2691a3d50.accept(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2179)
+	at net.minecraft.class_9761.method_60459(class_9761.java:242)
+	at net.minecraft.class_9761.method_60462(class_9761.java:106)
+	at net.minecraft.class_9761$$Lambda/0x00007ff268ffa2e8.apply(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at net.minecraft.class_1255.method_18859(class_1255.java:164)
+	at net.minecraft.class_3215$class_4212.method_18859(class_3215.java:602)
+	at net.minecraft.class_1255.method_16075(class_1255.java:138)
+	at net.minecraft.class_3215$class_4212.method_16075(class_3215.java:611)
+	at net.minecraft.class_1255.method_18857(class_1255.java:147)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at org.popcraft.chunky.platform.FabricServer.getConsole(FabricServer.java:66)
+	at org.popcraft.chunky.GenerationTask.update(GenerationTask.java:110)
+	at org.popcraft.chunky.GenerationTask.lambda$run$1(GenerationTask.java:158)
+	at org.popcraft.chunky.GenerationTask$$Lambda/0x00007ff2691a3d50.accept(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2179)
+	at net.minecraft.class_9761.method_60459(class_9761.java:242)
+	at net.minecraft.class_9761.method_60462(class_9761.java:106)
+	at net.minecraft.class_9761$$Lambda/0x00007ff268ffa2e8.apply(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at net.minecraft.class_1255.method_18859(class_1255.java:164)
+	at net.minecraft.class_3215$class_4212.method_18859(class_3215.java:602)
+	at net.minecraft.class_1255.method_16075(class_1255.java:138)
+	at net.minecraft.class_3215$class_4212.method_16075(class_3215.java:611)
+	at net.minecraft.class_1255.method_18857(class_1255.java:147)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at net.minecraft.class_2991.method_12899(class_2991.java:90)
+	at net.minecraft.class_2991.method_29460(class_2991.java:60)
+	at net.minecraft.class_2991.method_18699(class_2991.java:54)
+	at net.minecraft.server.MinecraftServer.method_3813(MinecraftServer.java:1055)
+	at net.minecraft.server.MinecraftServer.method_3748(MinecraftServer.java:953)
+	at net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:713)
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:292)
+
+-- Thread Dump --
+Details:
+	Threads: "Reference Handler" daemon prio=10 Id=9 RUNNABLE
+	at java.base@21.0.5/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@21.0.5/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+	at java.base@21.0.5/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+
+"Finalizer" daemon prio=8 Id=10 WAITING on java.lang.ref.NativeReferenceQueue$Lock@2c2bf5d6
+	at java.base@21.0.5/java.lang.Object.wait0(Native Method)
+	-  waiting on java.lang.ref.NativeReferenceQueue$Lock@2c2bf5d6
+	at java.base@21.0.5/java.lang.Object.wait(Object.java:366)
+	at java.base@21.0.5/java.lang.Object.wait(Object.java:339)
+	at java.base@21.0.5/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+	at java.base@21.0.5/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	at java.base@21.0.5/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+	at java.base@21.0.5/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+
+"Signal Dispatcher" daemon prio=9 Id=11 RUNNABLE
+
+
+"Notification Thread" daemon prio=9 Id=16 RUNNABLE
+
+
+"Common-Cleaner" daemon prio=8 Id=17 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4ec6739d
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4ec6739d
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+	at java.base@21.0.5/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+	at java.base@21.0.5/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+	at java.base@21.0.5/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+	at java.base@21.0.5/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+	at java.base@21.0.5/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+
+"QuiltLoaderCleaner0" daemon prio=5 Id=21 TIMED_WAITING
+	at java.base@21.0.5/java.lang.Thread.sleep0(Native Method)
+	at java.base@21.0.5/java.lang.Thread.sleep(Thread.java:509)
+	at app//org.quiltmc.loader.impl.util.QuiltLoaderCleanupTasks.runTasks(QuiltLoaderCleanupTasks.java:53)
+	at app//org.quiltmc.loader.impl.util.QuiltLoaderCleanupTasks$$Lambda/0x00007ff26802c910.run(Unknown Source)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"Quilt Deferred I/O Thread" daemon prio=5 Id=30 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3207940e
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3207940e
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	at java.base@21.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	at java.base@21.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+	at java.base@21.0.5/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"JNA Cleaner" daemon prio=5 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4459d609
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4459d609
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+	at java.base@21.0.5/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+	at java.base@21.0.5/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+	at java.base@21.0.5/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+	at com.sun.jna.internal.Cleaner$CleanerThread.run(Cleaner.java:154)
+
+
+"JackFredLib: Config File Update Watcher" daemon prio=5 Id=33 TIMED_WAITING
+	at java.base@21.0.5/java.lang.Thread.sleep0(Native Method)
+	at java.base@21.0.5/java.lang.Thread.sleep(Thread.java:558)
+	at org.apache.commons.io.ThreadUtils.sleep(ThreadUtils.java:49)
+	at org.apache.commons.io.monitor.FileAlterationMonitor.run(FileAlterationMonitor.java:150)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"Timer hack thread" daemon prio=5 Id=34 TIMED_WAITING
+	at java.base@21.0.5/java.lang.Thread.sleep0(Native Method)
+	at java.base@21.0.5/java.lang.Thread.sleep(Thread.java:509)
+	at net.minecraft.class_156$9.run(class_156.java:972)
+
+
+"Yggdrasil Key Fetcher" daemon prio=5 Id=35 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@372f1e11
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@372f1e11
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at java.base@21.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+	at java.base@21.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@21.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"Worker-Main-1" daemon prio=5 Id=38 BLOCKED on org.popcraft.chunky.GenerationTask@4a88c9f2 owned by "Server thread" Id=41
+	at org.popcraft.chunky.GenerationTask.update(GenerationTask.java:59)
+	-  blocked on org.popcraft.chunky.GenerationTask@4a88c9f2
+	at org.popcraft.chunky.GenerationTask.lambda$run$1(GenerationTask.java:158)
+	at org.popcraft.chunky.GenerationTask$$Lambda/0x00007ff2691a3d50.accept(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2179)
+	at net.minecraft.class_9761.method_60459(class_9761.java:242)
+	at net.minecraft.class_9761.method_60462(class_9761.java:106)
+	at net.minecraft.class_9761$$Lambda/0x00007ff268ffa2e8.apply(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2372)
+	at net.minecraft.class_9761.method_60461(class_9761.java:101)
+	at net.minecraft.class_9759.method_60428(class_9759.java:148)
+	at net.minecraft.class_9759.method_60427(class_9759.java:125)
+	at net.minecraft.class_9759.method_60432(class_9759.java:76)
+	at net.minecraft.class_9759.method_60424(class_9759.java:61)
+	at net.minecraft.class_3898.method_60446(class_3898.java:700)
+	at net.minecraft.class_3898$$Lambda/0x00007ff268ff6cf0.run(Unknown Source)
+	at net.minecraft.class_10171.method_63554(class_10171.java:88)
+	at net.minecraft.class_10171$$Lambda/0x00007ff268ff5860.accept(Unknown Source)
+	at net.minecraft.class_10178.method_63604(class_10178.java:21)
+	at net.minecraft.class_10178$$Lambda/0x00007ff268ff5a88.run(Unknown Source)
+	at net.minecraft.class_156.method_64122(class_156.java:296)
+	at net.minecraft.class_10174.method_63592(class_10174.java:50)
+	at net.minecraft.class_10174.run(class_10174.java:62)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1423)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"Server thread" prio=5 Id=41 TIMED_WAITING on java.lang.String@4ec2ec4a
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.lang.String@4ec2ec4a
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	at net.minecraft.class_1255.method_20813(class_1255.java:159)
+	at net.minecraft.class_1255.method_18857(class_1255.java:149)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at org.popcraft.chunky.platform.FabricServer.getConsole(FabricServer.java:66)
+	at org.popcraft.chunky.GenerationTask.update(GenerationTask.java:110)
+	-  locked org.popcraft.chunky.GenerationTask@4a88c9f2
+	at org.popcraft.chunky.GenerationTask.lambda$run$1(GenerationTask.java:158)
+	at org.popcraft.chunky.GenerationTask$$Lambda/0x00007ff2691a3d50.accept(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2179)
+	at net.minecraft.class_9761.method_60459(class_9761.java:242)
+	at net.minecraft.class_9761.method_60462(class_9761.java:106)
+	at net.minecraft.class_9761$$Lambda/0x00007ff268ffa2e8.apply(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at net.minecraft.class_1255.method_18859(class_1255.java:164)
+	at net.minecraft.class_3215$class_4212.method_18859(class_3215.java:602)
+	at net.minecraft.class_1255.method_16075(class_1255.java:138)
+	at net.minecraft.class_3215$class_4212.method_16075(class_3215.java:611)
+	at net.minecraft.class_1255.method_18857(class_1255.java:147)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at org.popcraft.chunky.platform.FabricServer.getConsole(FabricServer.java:66)
+	at org.popcraft.chunky.GenerationTask.update(GenerationTask.java:110)
+	-  locked org.popcraft.chunky.GenerationTask@4a88c9f2
+	at org.popcraft.chunky.GenerationTask.lambda$run$1(GenerationTask.java:158)
+	at org.popcraft.chunky.GenerationTask$$Lambda/0x00007ff2691a3d50.accept(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2179)
+	at net.minecraft.class_9761.method_60459(class_9761.java:242)
+	at net.minecraft.class_9761.method_60462(class_9761.java:106)
+	at net.minecraft.class_9761$$Lambda/0x00007ff268ffa2e8.apply(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at net.minecraft.class_1255.method_18859(class_1255.java:164)
+	at net.minecraft.class_3215$class_4212.method_18859(class_3215.java:602)
+	at net.minecraft.class_1255.method_16075(class_1255.java:138)
+	at net.minecraft.class_3215$class_4212.method_16075(class_3215.java:611)
+	at net.minecraft.class_1255.method_18857(class_1255.java:147)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at org.popcraft.chunky.platform.FabricServer.getConsole(FabricServer.java:66)
+	at org.popcraft.chunky.GenerationTask.update(GenerationTask.java:110)
+	-  locked org.popcraft.chunky.GenerationTask@4a88c9f2
+	at org.popcraft.chunky.GenerationTask.lambda$run$1(GenerationTask.java:158)
+	at org.popcraft.chunky.GenerationTask$$Lambda/0x00007ff2691a3d50.accept(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2179)
+	at net.minecraft.class_9761.method_60459(class_9761.java:242)
+	at net.minecraft.class_9761.method_60462(class_9761.java:106)
+	at net.minecraft.class_9761$$Lambda/0x00007ff268ffa2e8.apply(Unknown Source)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base@21.0.5/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at net.minecraft.class_1255.method_18859(class_1255.java:164)
+	at net.minecraft.class_3215$class_4212.method_18859(class_3215.java:602)
+	at net.minecraft.class_1255.method_16075(class_1255.java:138)
+	at net.minecraft.class_3215$class_4212.method_16075(class_3215.java:611)
+	at net.minecraft.class_1255.method_18857(class_1255.java:147)
+	at net.minecraft.class_3215$class_4212.method_18857(class_3215.java:575)
+	at net.minecraft.class_3215.getChunkBlocking(class_3215.java:1295)
+	at net.minecraft.class_3215.method_12121(class_3215.java:1216)
+	at net.minecraft.class_1937.method_8402(class_1937.java:209)
+	at net.minecraft.class_1937.method_8497(class_1937.java:5065)
+	at net.minecraft.class_1937.method_8624(class_1937.java:361)
+	at net.minecraft.class_4538.method_8598(class_4538.java:93)
+	at net.minecraft.class_5423.method_8598(class_5423.java:33)
+	at net.minecraft.class_1937.method_43126(class_1937.java:643)
+	at net.minecraft.server.MinecraftServer.method_3739(MinecraftServer.java:1661)
+	at net.minecraft.class_2991.method_12899(class_2991.java:90)
+	at net.minecraft.class_2991.method_29460(class_2991.java:60)
+	at net.minecraft.class_2991.method_18699(class_2991.java:54)
+	at net.minecraft.server.MinecraftServer.method_3813(MinecraftServer.java:1055)
+	at net.minecraft.server.MinecraftServer.method_3748(MinecraftServer.java:953)
+	at net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:713)
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:292)
+	at net.minecraft.server.MinecraftServer$$Lambda/0x00007ff268ed9048.run(Unknown Source)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"DestroyJavaVM" prio=5 Id=43 RUNNABLE
+
+
+"Server console handler" daemon prio=5 Id=44 RUNNABLE (in native)
+	at java.base@21.0.5/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@21.0.5/java.io.FileInputStream.read(FileInputStream.java:287)
+	at java.base@21.0.5/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base@21.0.5/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base@21.0.5/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base@21.0.5/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base@21.0.5/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base@21.0.5/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base@21.0.5/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base@21.0.5/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base@21.0.5/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base@21.0.5/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base@21.0.5/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base@21.0.5/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at net.minecraft.class_3176$1.run(class_3176.java:102)
+
+	Number of locked synchronizers = 3
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@1d2ac15
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@d192284
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@456a43a5
+
+
+"Netty Epoll Server IO #0" daemon prio=5 Id=45 RUNNABLE (in native)
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:220)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:213)
+	at io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:308)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:365)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-1" prio=5 Id=46 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.5/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"Server Watchdog" daemon prio=5 Id=56 RUNNABLE
+	at java.management@21.0.5/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@21.0.5/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:518)
+	at java.management@21.0.5/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:506)
+	at net.minecraft.class_3178.method_61256(class_3178.java:75)
+	at net.minecraft.class_3178.run(class_3178.java:47)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"Chunky-minecraft:overworld Thread" daemon prio=5 Id=60 WAITING on java.util.concurrent.Semaphore$NonfairSync@835e27d
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.Semaphore$NonfairSync@835e27d
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.park(LockSupport.java:221)
+	at java.base@21.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:754)
+	at java.base@21.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1099)
+	at java.base@21.0.5/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at org.popcraft.chunky.GenerationTask.run(GenerationTask.java:140)
+	at java.base@21.0.5/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base@21.0.5/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@43f3bdb7
+
+
+"IO-Worker-9" prio=5 Id=67 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.5/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-13" prio=5 Id=71 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.5/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"Worker-Main-5" daemon prio=5 Id=73 TIMED_WAITING on java.util.concurrent.ForkJoinPool@4c7cecfd
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@4c7cecfd
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:449)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1891)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1809)
+	at java.base@21.0.5/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+
+"IO-Worker-14" prio=5 Id=74 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.5/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-15" prio=5 Id=75 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.5/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-16" prio=5 Id=76 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.5/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+"IO-Worker-17" prio=5 Id=77 TIMED_WAITING on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$Transferer@1c9357fe
+	at java.base@21.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+	at java.base@21.0.5/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+	at java.base@21.0.5/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base@21.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.5/java.lang.Thread.runWith(Thread.java:1596)
+	at java.base@21.0.5/java.lang.Thread.run(Thread.java:1583)
+
+
+
+Stacktrace:
+	at net.minecraft.class_3178.method_61256(class_3178.java:90)
+	at net.minecraft.class_3178.run(class_3178.java:47)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+-- Performance stats --
+Details:
+	Random tick rate: 3
+	Level stats: minecraft:overworld: players: 0, entities: 104,104,42,688,688,0,0 [minecraft:sheep:25,minecraft:rabbit:19,minecraft:chicken:17,minecraft:cow:15,minecraft:pig:8], block_entities: 89 [<null>:17,minecraft:trial_spawner:17,minecraft:mob_spawner:17,minecraft:vault:16,minecraft:hopper:13], block_ticks: 51379, fluid_ticks: 69, chunk_source: Chunks[S] W: 1760 E: 104,104,42,688,688,0,0,
+minecraft:the_end: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+minecraft:the_nether: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.4
+	Minecraft Version ID: 1.21.4
+	Operating System: Linux (amd64) version 6.6.69
+	Java Version: 21.0.5, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 589824000 bytes (562 MiB) / 1373634560 bytes (1310 MiB) up to 2074083328 bytes (1978 MiB)
+	CPUs: 2
+	Processor Vendor: GenuineIntel
+	Processor Name: Pentium(R) Dual-Core  CPU      E5700  @ 3.00GHz
+	Identifier: Intel64 Family 6 Model 23 Stepping 10
+	Microarchitecture: Penryn (Client) / Penryn (Server)
+	Frequency (GHz): 3.00
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 2
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 12967.09
+	Virtual memory used (MiB): 2397.03
+	Swap memory total (MiB): 9011.20
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 208223.66, total: 224774.72
+	Space in storage for workdir (MiB): available: 208223.66, total: 224774.72
+	JVM Flags: 0 total; 
+	Fabric Mods: 
+		blastingraw: Blasting Raw Metal Blocks 3
+		blastingsand: Smelting Sand in a Blast Furnace 12
+		bottledair: Bottled Air 2.5
+		chunky: Chunky 1.4.27
+		collective: Collective 7.94
+		deimos: Deimos 2.1
+		dynamiclights: Dynamic Lights 1.8.5+mod
+		fabric-api: Fabric API 0.118.5+1.21.4
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.86+b1caf1e904
+			fabric-biome-api-v1: Fabric Biome API (v1) 15.0.6+b1c29d8e04
+			fabric-block-api-v1: Fabric Block API (v1) 1.0.31+7feeb73304
+			fabric-command-api-v1: Fabric Command API (v1) 1.2.62+f71b366f04
+			fabric-command-api-v2: Fabric Command API (v2) 2.2.41+e496eb1504
+			fabric-commands-v0: Fabric Commands (v0) 0.2.79+df3654b304
+			fabric-content-registries-v0: Fabric Content Registries (v0) 9.1.19+25d1a67604
+			fabric-convention-tags-v1: Fabric Convention Tags 2.1.18+7f945d5b04
+			fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.13.1+4a9c1ece04
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.3.6+7feeb73304
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.6.1+e99da0f704
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 22.2.13+60b6f1b704
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 4.0.10+7feeb73304
+			fabric-entity-events-v1: Fabric Entity Events (v1) 2.0.15+62245bef04
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 4.0.3+a4eebcf004
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.63+7d48d43904
+			fabric-item-api-v1: Fabric Item API (v1) 11.3.0+ee91fa1f04
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.2.2+fcb9601404
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.5.4+bf2a60eb04
+			fabric-loot-api-v2: Fabric Loot API (v2) 3.0.38+3f89f5a504
+			fabric-loot-api-v3: Fabric Loot API (v3) 1.0.26+203e6b2304
+			fabric-message-api-v1: Fabric Message API (v1) 6.0.25+7feeb73304
+			fabric-networking-api-v1: Fabric Networking API (v1) 4.3.10+8998135104
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 18.0.14+38b0d59804
+			fabric-particles-v1: Fabric Particles (v1) 4.0.14+7feeb73304
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 8.1.0+640e77ae04
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 6.1.10+4a9c1ece04
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 5.0.13+203e6b2304
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.117+7feeb73304
+			fabric-tag-api-v1: Fabric Tag API (v1) 1.0.7+7d48d43904
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 5.4.9+efa825c904
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 6.3.2+56e78b9b04
+		fabric-api-base: Fabric API Base 0.4.54+b47eab6b04
+		fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.19+7feeb73304
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.57+73761d2e04
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.19+7feeb73304
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 3.1.1+360374ac04
+		glowing-eyeblossom: Glowing Eyeblossom 1.3.0
+		glowing-torchflower: Glowing Torchflower 1.2.0
+			com_typesafe_config: config 1.4.3
+			io_leangen_geantyref_geantyref: geantyref 1.3.13
+			org_apache_commons_commons-text: commons-text 1.10.0
+			org_spongepowered_configurate-core: configurate-core 4.1.2
+			org_spongepowered_configurate-hocon: configurate-hocon 4.1.2
+		image2map: Image2Map 0.8.0+1.21.3
+			fabric-permissions-api-v0: fabric-permissions-api 0.3.2
+			map-canvas-api: Map Canvas API 0.5.0+1.21.3
+			sgui: sgui 1.7.2+1.21.2
+		io_github_douira_glsl-transformer: glsl-transformer 2.0.1
+		jade: Jade 17.2.2+fabric
+		java: OpenJDK 64-Bit Server VM 21
+		journeymap: Journeymap 1.21.4-6.0.0-beta.40
+			ar_com_hjg_pngj: pngj 2.1.0
+			commonnetworking: Common Network 1.0.18-1.21.4
+			journeymap-api-fabric: JourneyMap API 2.0.0-1.21.4-SNAPSHOT
+		justmobheads: Just Mob Heads 8.5
+		justplayerheads: Just Player Heads 4.2
+		lenientdeath: Lenient Death 1.2.5+1.21.2
+			jackfredlib-base: JackFredLib: Base 1.4.1+1.21.2
+			jackfredlib-colour: JackFredLib: Colour 1.1.0+1.21.2
+			jackfredlib-config: JackFredLib: Config 0.2.3+1.21.2
+				blue_endless_jankson: jankson 1.2.3
+				commons-io_commons-io: commons-io 2.17.0
+			jackfredlib-lying: JackFredLib: Lying 0.5.5+1.21.2
+			server_translations_api: Server Translations API 2.4.0+1.21.2-rc1
+				packet_tweaker: Packet Tweaker 0.6.0-pre.1+1.21.2-pre3
+		lithium: Lithium 0.15.0+mc1.21.4
+		minecraft: Minecraft 1.21.4
+		moremobs: More Mobs 1.5.4+mod
+		mr_banner_flags: Banner Flags 2.8
+		mr_banner_text: Banner Text 1.3.2
+		mr_better_babies: Better Babies 0.7.17
+		mr_better_hangingsigns: Better Hanging Signs 5.1
+		mr_builders_dream: Builders Dream 1.3
+		mr_call_yourhorse: Call Your Horse 1-v.1.2.6
+		mr_catenary: Catenary 0.4
+		mr_craft_elytra: Craftable Elytra 61.1
+		mr_craft_saddle: Craftable Saddles 61.1
+		mr_craftable_froglights: Craftable Froglights 2.4
+		mr_craftable_invisibleitemframes: Invisible Item Frames 1.1.3
+		mr_dinobriks_rum: DinoBriks Rum 2.0.5
+		mr_dynamic_torches: Dynamic Lights 5.3
+		mr_gardeners_dream: Gardener's Dream 1.8
+		mr_gens_dataapi: Data API 1.8.1
+		mr_gens_villagerhats: Gen's Villager Hats 0.1.20
+		mr_glowing_glowsquids: Glow Squids Actually Glow 3
+		mr_jbtc: Judge by the Cover 3
+		mr_purpurpacks_hoeeffectivecactus: Hoe Effective Cactus [PurpurPack] 3.1
+		mr_purpurpacks_hoeeffectivefroglights: Hoe Effective Froglights [PurpurPack] 3.1
+		mr_purpurpacks_redyeconcretepowder: Re-Dye Concrete Powder [PurpurPack] 4.1
+		mr_sleep: Sleep 1-v.3.2.1
+		mr_stew_tweaks: Stew tweaks 1
+		mr_stonecutter_damage: Stonecutter Damage 1-mcmeta-45-48_1.21
+		mr_stonecutter_salvage: Stonecutter Salvage 1.6.4
+		mr_tidal_towns: Tidal Towns 1.3.4
+		mr_unlock_allrecipes: Unlock All Recipes 61.1
+		mr_vanilla_refresh: Vanilla Refresh 1.4.26e
+		nametagtweaks: Name Tag Tweaks 4.0
+		net_lenni0451_reflect: Reflect 1.3.4
+		nochatreports: No Chat Reports 1.21.4-v2.11.0
+		noisium: Noisium 2.5.0+mc1.21.4
+		org_anarres_jcpp: jcpp 1.4.14
+		org_antlr_antlr4-runtime: antlr4-runtime 4.13.1
+		placeholder-api: Placeholder API 2.5.2+1.21.3
+		quad: Quad 1.2.11
+		quilt_loader: Quilt Loader 0.28.0
+			mixinextras: MixinExtras 0.4.1
+		replantingcrops: Replanting Crops 5.5
+		rocks: This Rocks! 1.9.1
+			midnightlib: MidnightLib 1.6.6
+		scaffoldingdropsnearby: Scaffolding Drops Nearby 3.4
+		shulkerdropstwo: Shulker Drops Two 3.5
+		sit-oth3r: Sit! 1.2.3+1.21.4
+		smallernetherportals: Smaller Nether Portals 3.9
+		spawnanimations: Spawn Animations 1.10+mod
+		terralith: Terralith 2.5.8
+		tool_trims: Tool Trims Packaged 2.3.0
+		unloadedactivity: Unloaded Activity 0.6.5
+		viewdistancefix: View Distance Fix 1.21.4-1.0.2
+		wooltweaks: Wool Tweaks 3.9
+	Server Running: true
+	Player Count: 0 / 20; []
+	Active Data Packs: vanilla, fabric, collective (incompatible), dynamiclights, fabric-convention-tags-v2, lenientdeath, moremobs, mr_banner_flags (incompatible), mr_banner_text (incompatible), mr_better_babies, mr_better_hangingsigns, mr_builders_dream, mr_call_yourhorse (incompatible), mr_catenary, mr_craft_elytra, mr_craft_saddle, mr_craftable_froglights, mr_craftable_invisibleitemframes, mr_dinobriks_rum, mr_dynamic_torches, mr_gardeners_dream (incompatible), mr_gens_dataapi, mr_gens_villagerhats, mr_glowing_glowsquids (incompatible), mr_jbtc, mr_purpurpacks_hoeeffectivecactus, mr_purpurpacks_hoeeffectivefroglights, mr_purpurpacks_redyeconcretepowder, mr_sleep (incompatible), mr_stew_tweaks, mr_stonecutter_damage (incompatible), mr_stonecutter_salvage (incompatible), mr_tidal_towns (incompatible), mr_unlock_allrecipes, mr_vanilla_refresh, nametagtweaks, quad, rocks, server_translations_api, spawnanimations, terralith, tool_trims, wooltweaks
+	Available Data Packs: collective (incompatible), dynamiclights, fabric, fabric-convention-tags-v2, lenientdeath, minecart_improvements, moremobs, mr_banner_flags (incompatible), mr_banner_text (incompatible), mr_better_babies, mr_better_hangingsigns, mr_builders_dream, mr_call_yourhorse (incompatible), mr_catenary, mr_craft_elytra, mr_craft_saddle, mr_craftable_froglights, mr_craftable_invisibleitemframes, mr_dinobriks_rum, mr_dynamic_torches, mr_gardeners_dream (incompatible), mr_gens_dataapi, mr_gens_villagerhats, mr_glowing_glowsquids (incompatible), mr_jbtc, mr_purpurpacks_hoeeffectivecactus, mr_purpurpacks_hoeeffectivefroglights, mr_purpurpacks_redyeconcretepowder, mr_sleep (incompatible), mr_stew_tweaks, mr_stonecutter_damage (incompatible), mr_stonecutter_salvage (incompatible), mr_tidal_towns (incompatible), mr_unlock_allrecipes, mr_vanilla_refresh, nametagtweaks, quad, redstone_experiments, rocks, server_translations_api, spawnanimations, terralith, tool_trims, trade_rebalance, vanilla, wooltweaks
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	World Seed: -7265543954434323434
+	Suppressed Exceptions: ~~NONE~~
+	Is Modded: Definitely; Server brand changed to 'quilt'
+	Type: Dedicated Server (map_server.txt)
